@@ -16,12 +16,15 @@ public final class CiJi extends JavaPlugin {
        Player p1 = Bukkit.getPlayer("ImOxygen233");
        Player p2 = Bukkit.getPlayer("LiteCat");
        Player p3 = Bukkit.getPlayer("jared2021");
+       Player p4 = Bukkit.getPlayer("HKZ");
        if(p1!=null)
            p1.sendMessage("你确定你是Oxygen吗？");
        if(p2!=null)
            p2.sendMessage("口也，华喵！");
        if(p3!=null)
            p3.sendMessage("2333");
+       if(p4!=null)
+           p4.sendMessage("刺稽");
         // Plugin startup logic
 
     }
