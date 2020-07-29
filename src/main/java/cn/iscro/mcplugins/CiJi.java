@@ -11,7 +11,7 @@ public final class CiJi extends JavaPlugin {
 
     @Override
     public void onEnable() {
-       System.out.println("插件成功启动！刺稽");
+       this.getLogger().info("插件成功启动！刺稽");
        Bukkit.getPluginCommand("ciji").setExecutor(new CiJiCommand());
        Player p1 = Bukkit.getPlayer("ImOxygen233");
        Player p2 = Bukkit.getPlayer("LiteCat");
