@@ -7,11 +7,15 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 
-public final class CiJi extends JavaPlugin {
+import java.util.ArrayList;
+import java.util.List;
 
+public final class CiJi extends JavaPlugin {
+    public static CiJi instance;
     @Override
     public void onEnable() {
-       this.getLogger().info("插件成功启动！刺稽");
+       instance = this;
+       getLogger().info("插件成功启动！刺稽");
        Bukkit.getPluginCommand("ciji").setExecutor(new CiJiCommand());
        Player p1 = Bukkit.getPlayer("ImOxygen233");
        Player p2 = Bukkit.getPlayer("LiteCat");
@@ -29,11 +33,10 @@ public final class CiJi extends JavaPlugin {
 
     }
 
-
     public class CiJiCommand implements CommandExecutor {
         @Override
         public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
-            sender.sendMessage("刺稽");
+            sender.sendMessage("&3刺稽");
             return true;
         }
     }
