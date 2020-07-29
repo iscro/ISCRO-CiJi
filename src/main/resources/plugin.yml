@@ -1,0 +1,9 @@
+name: CiJi
+version: ${project.version}
+main: cn.iscro.mcplugins.CiJi
+prefix: ISCRO-刺稽
+authors: [ImOxygen233]
+website: iscro.cn
+commands:
+  ciji:
+    description: 使用刺稽插件
