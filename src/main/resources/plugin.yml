@@ -6,4 +6,11 @@ authors: [ImOxygen233]
 website: iscro.cn
 commands:
   ciji:
-    description: 使用刺稽插件
+    usage: "/ciji"
+    description: "使用刺稽插件"
+  l:
+    usage: "/l <Your Password>"
+    description: "登录本服"
+  reg:
+    usage: "/reg <Your Password>"
+    description: "注册本服账号"

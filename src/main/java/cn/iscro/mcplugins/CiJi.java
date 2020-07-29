@@ -5,6 +5,9 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.Listener;
+import org.bukkit.event.player.PlayerCommandPreprocessEvent;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.util.ArrayList;
@@ -16,6 +19,13 @@ public final class CiJi extends JavaPlugin {
     public void onEnable() {
        instance = this;
        getLogger().info("插件成功启动！刺稽");
+       this.saveDefaultConfig();
+       Bukkit.getPluginManager().registerEvents(new LoginListener(),this);
+       Bukkit.getPluginManager().registerEvents(new LoginCommand(),this);
+       Bukkit.getPluginManager().registerEvents(new LoginTipListener(),this);
+       CommandExecutor ce = new LoginCommand();
+       Bukkit.getPluginCommand("l").setExecutor(ce);
+       Bukkit.getPluginCommand("reg").setExecutor(ce);
        Bukkit.getPluginCommand("ciji").setExecutor(new CiJiCommand());
        Player p1 = Bukkit.getPlayer("ImOxygen233");
        Player p2 = Bukkit.getPlayer("LiteCat");
