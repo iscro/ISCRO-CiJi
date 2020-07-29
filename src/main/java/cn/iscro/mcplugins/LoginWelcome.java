@@ -25,4 +25,10 @@ public class LoginWelcome{
         CiJi.instance.saveConfig();
         return true;
     }
+    public static boolean isCorrectPassword(String PlayerName,String Password){
+        if(!isRegister(PlayerName))
+            return false;
+        String pass = CiJi.instance.getConfig().getString("player_data." + PlayerName + ".password");
+        return pass.equals(Password);
+    }
 }
