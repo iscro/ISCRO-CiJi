@@ -14,10 +14,8 @@ public class LoginWelcome{
             while (UnloginList.contains(PlayerName)) {
             UnloginList.remove(PlayerName);
             }
-            return;
         } else {
             UnloginList.add(PlayerName);
-            return;
         }
     }
     public static boolean isRegister(String PlayerName){
