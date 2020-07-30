@@ -17,6 +17,7 @@ public final class CiJi extends JavaPlugin {
        Bukkit.getPluginManager().registerEvents(new LoginListener(),this);
        Bukkit.getPluginManager().registerEvents(new LoginCommand(),this);
        Bukkit.getPluginManager().registerEvents(new LoginTipListener(),this);
+       Bukkit.getPluginManager().registerEvents(new AntiExplosionSuit(),this);
        CommandExecutor ce = new LoginCommand();
        Bukkit.getPluginCommand("l").setExecutor(ce);
        Bukkit.getPluginCommand("reg").setExecutor(ce);
