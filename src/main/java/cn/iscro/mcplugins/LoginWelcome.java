@@ -16,6 +16,9 @@ public class LoginWelcome{
     public static void SetPlayerLogin(String PlayerName,boolean Flag){
         if(Flag){
             UnloginList.remove(PlayerName);
+            while (UnloginList.contains(PlayerName)) {
+            UnloginList.remove(PlayerName);
+            }
             return;
         } else {
             UnloginList.add(PlayerName);
