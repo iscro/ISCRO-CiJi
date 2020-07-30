@@ -1,4 +1,4 @@
-package cn.iscro.mcplugins;
+package cn.iscro.ciji;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;

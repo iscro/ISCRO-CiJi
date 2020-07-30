@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>cn.iscro</groupId>
-    <artifactId>MCPlugins</artifactId>
+    <artifactId>CiJi</artifactId>
     <version>0.1-DEV_ONLY</version>
     <packaging>jar</packaging>
 

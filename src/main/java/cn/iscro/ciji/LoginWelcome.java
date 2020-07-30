@@ -1,9 +1,4 @@
-package cn.iscro.mcplugins;
-
-import org.bukkit.Bukkit;
-import org.bukkit.entity.Player;
-import org.bukkit.event.EventHandler;
-import org.bukkit.event.player.PlayerJoinEvent;
+package cn.iscro.ciji;
 
 import java.util.ArrayList;
 import java.util.List;

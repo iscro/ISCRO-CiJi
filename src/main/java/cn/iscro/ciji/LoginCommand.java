@@ -1,4 +1,4 @@
-package cn.iscro.mcplugins;
+package cn.iscro.ciji;
 
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;

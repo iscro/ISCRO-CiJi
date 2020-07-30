@@ -1,6 +1,6 @@
 name: CiJi
 version: ${project.version}
-main: cn.iscro.mcplugins.CiJi
+main: cn.iscro.ciji.CiJi
 prefix: ISCRO-刺稽
 authors: [ImOxygen233]
 website: iscro.cn
