@@ -1,5 +1,7 @@
 package cn.iscro.mcplugins;
 
+import org.bukkit.Bukkit;
+import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.player.PlayerJoinEvent;
 
@@ -14,8 +16,10 @@ public class LoginWelcome{
     public static void SetPlayerLogin(String PlayerName,boolean Flag){
         if(Flag){
             UnloginList.remove(PlayerName);
+            return;
         } else {
             UnloginList.add(PlayerName);
+            return;
         }
     }
     public static boolean isRegister(String PlayerName){
