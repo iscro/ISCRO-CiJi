@@ -1,5 +1,6 @@
 package cn.iscro.ciji;
 
+import org.bukkit.GameMode;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.inventory.InventoryOpenEvent;
@@ -30,6 +31,7 @@ public class LoginListener implements Listener {
     @EventHandler
     private void OnPlayerJoin(PlayerJoinEvent ThisEvent){
         LoginWelcome.SetPlayerLogin(ThisEvent.getPlayer().getName(),false);
+        ThisEvent.getPlayer().setGameMode(GameMode.SPECTATOR);
     }
     @EventHandler
     private void OnPlayerQuit(PlayerQuitEvent ThisEvent){

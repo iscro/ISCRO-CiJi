@@ -1,5 +1,8 @@
 package cn.iscro.ciji;
 
+import org.bukkit.Bukkit;
+import org.bukkit.GameMode;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -11,6 +14,7 @@ public class LoginWelcome{
     public static void SetPlayerLogin(String PlayerName,boolean Flag){
         if(Flag){
             UnloginList.remove(PlayerName);
+            Bukkit.getPlayerExact(PlayerName).setGameMode(Bukkit.getDefaultGameMode());
             while (UnloginList.contains(PlayerName)) {
             UnloginList.remove(PlayerName);
             }
