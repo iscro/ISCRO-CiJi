@@ -1,7 +1,5 @@
 package cn.iscro.ciji;
-
 import org.bukkit.Bukkit;
-import org.bukkit.GameMode;
 
 import java.util.ArrayList;
 import java.util.List;

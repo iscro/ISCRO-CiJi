@@ -1,5 +1,4 @@
 package cn.iscro.ciji;
-
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -22,6 +21,13 @@ public final class CiJi extends JavaPlugin {
        Bukkit.getPluginCommand("l").setExecutor(ce);
        Bukkit.getPluginCommand("reg").setExecutor(ce);
        Bukkit.getPluginCommand("ciji").setExecutor(new CiJiCommand());
+       Bukkit.getPluginCommand("bp").setExecutor(new QuickBan());
+       Bukkit.getPluginCommand("bip").setExecutor(new QuickBan());
+       Bukkit.getPluginCommand("ubp").setExecutor(new QuickBan());
+       Bukkit.getPluginCommand("ubip").setExecutor(new QuickBan());
+       Bukkit.getPluginCommand("gbp").setExecutor(new QuickBan());
+       Bukkit.getPluginCommand("gbip").setExecutor(new QuickBan());
+
        Player p1 = Bukkit.getPlayer("ImOxygen233");
        Player p2 = Bukkit.getPlayer("LiteCat");
        Player p3 = Bukkit.getPlayer("jared2021");
@@ -43,6 +49,7 @@ public final class CiJi extends JavaPlugin {
     public class CiJiCommand implements CommandExecutor {
         @Override
         public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
+            if(command.getName().equalsIgnoreCase("ciji"))
             sender.sendMessage("&3刺稽");
             return true;
         }

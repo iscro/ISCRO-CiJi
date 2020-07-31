@@ -29,7 +29,7 @@ public class LoginListener implements Listener {
         return  !LoginWelcome.isLogin(PlayerName);
     }
     @EventHandler
-    private void OnPlayerJoin(PlayerJoinEvent ThisEvent){
+    public void OnPlayerJoin(PlayerJoinEvent ThisEvent){
         LoginWelcome.SetPlayerLogin(ThisEvent.getPlayer().getName(),false);
         ThisEvent.getPlayer().setGameMode(GameMode.SPECTATOR);
     }
@@ -37,5 +37,6 @@ public class LoginListener implements Listener {
     private void OnPlayerQuit(PlayerQuitEvent ThisEvent){
         LoginWelcome.SetPlayerLogin(ThisEvent.getPlayer().getName(),false);
     }
+
 
 }

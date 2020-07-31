@@ -14,3 +14,27 @@ commands:
   reg:
     usage: "/reg <Your Password>"
     description: "注册本服账号"
+  bp:
+    usage: "/bp <Player Name>"
+    description: "快速封禁一个玩家"
+    permission: "ciji.ban.player"
+  bip:
+    usage: "/bip <IP Address>"
+    description: "快速封禁一个IP"
+    permission: "ciji.ban.ip"
+  ubp:
+    usage: "/ubp <Player Name>"
+    description: "快速解封一个玩家"
+    permission: "ciji.unban.player"
+  ubip:
+    usage: "/ubip <IP Address>"
+    description: "快速解封一个IP"
+    permission: "ciji.unban.ip"
+  gbp:
+    usage: "/gbp"
+    description: "获取当前封禁的玩家列表"
+    permission: "ciji.getbanlist.player"
+  gbip:
+   usage: "/gbip"
+   description: "获取当前封禁的IP列表"
+   permission: "ciji.getbanlist.player"
