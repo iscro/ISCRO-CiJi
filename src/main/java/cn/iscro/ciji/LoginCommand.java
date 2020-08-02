@@ -19,6 +19,7 @@ public class LoginCommand implements Listener, CommandExecutor {
         if(ThisEvent.getMessage().split(" ")[0].contains("l") || ThisEvent.getMessage().split(" ")[0].contains("reg"))
             ThisEvent.setCancelled(false);
     }
+
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args){
         if(!(sender instanceof Player))

@@ -1,4 +1,5 @@
 package cn.iscro.ciji;
+import org.apache.commons.codec.digest.DigestUtils;
 import org.bukkit.Bukkit;
 
 import java.util.ArrayList;
@@ -26,14 +27,14 @@ public class LoginWelcome{
     public static boolean Register(String PlayerName,String Password){
         if(isRegister(PlayerName))
             return false;
-        CiJi.instance.getConfig().set("player_data." + PlayerName + ".password",Password);
+        CiJi.instance.getConfig().set("player_data." + PlayerName + ".password", DigestUtils.md5Hex(Password));
         CiJi.instance.saveConfig();
         return true;
     }
     public static boolean isCorrectPassword(String PlayerName,String Password){
         if(!isRegister(PlayerName))
             return false;
-        String pass = CiJi.instance.getConfig().getString("player_data." + PlayerName + ".password");
-        return pass.equals(Password);
+        String pass_md5 = CiJi.instance.getConfig().getString("player_data." + PlayerName + ".password");
+        return pass_md5.equals(DigestUtils.md5Hex(Password));
     }
 }
