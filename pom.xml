@@ -6,7 +6,7 @@
 
     <groupId>cn.iscro</groupId>
     <artifactId>CiJi</artifactId>
-    <version>0.1-DEV_ONLY</version>
+    <version>0.2-DEV_ONLY</version>
     <packaging>jar</packaging>
 
     <name>CiJi</name>
